@@ -1,0 +1,12 @@
+# pod.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: test-jenkins
+  namespace: jenkins
+spec:
+  containers:
+    - name: hello
+      image: nginx
+      ports:
+        - containerPort: 80
